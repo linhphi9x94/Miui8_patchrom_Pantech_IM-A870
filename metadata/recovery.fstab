@@ -1,0 +1,19 @@
+#	Android	fstab
+#<src>	<mnt_point>	<type>
+#	The	filesystem
+#	specify	MF_CHECK,
+		
+/rawdata	emmc	/dev/block/platform/msm_sdcc.1/by-name/rawdata
+/boot	emmc	/dev/block/platform/msm_sdcc.1/by-name/boot
+/recovery	emmc	/dev/block/platform/msm_sdcc.1/by-name/recovery
+/cache	auto	/dev/block/platform/msm_sdcc.1/by-name/cache
+/system	ext4	/dev/block/platform/msm_sdcc.1/by-name/system
+/data	auto	/dev/block/platform/msm_sdcc.1/by-name/userdata
+/m9kefs1	emmc	/dev/block/platform/msm_sdcc.1/by-name/m9kefs1
+/m9kefs2	emmc	/dev/block/platform/msm_sdcc.1/by-name/m9kefs2
+/m9kefs3	emmc	/dev/block/platform/msm_sdcc.1/by-name/m9kefs3
+/modemst1	emmc	/dev/block/platform/msm_sdcc.1/by-name/modemst1
+/modemst2	emmc	/dev/block/platform/msm_sdcc.1/by-name/modemst2
+		
+/external_sd	auto	/dev/block/mmcblk1p1
+/usb-otg	auto	/dev/block/sda1
