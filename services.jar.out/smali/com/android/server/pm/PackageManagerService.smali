@@ -18257,43 +18257,13 @@
 
     .line 9094
     :cond_d
-    move-object/from16 v0, p0
-
-    iget-boolean v0, v0, Lcom/android/server/pm/PackageManagerService;->mPromoteSystemApps:Z
-
-    move/from16 v23, v0
-
-    if-eqz v23, :cond_e
-
-    .line 9095
     invoke-static/range {v20 .. v20}, Lcom/android/server/pm/PackageManagerService;->isSystemApp(Lcom/android/server/pm/PackageSetting;)Z
 
     move-result v23
 
-    .line 9094
     if-eqz v23, :cond_e
 
     .line 9096
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/android/server/pm/PackageManagerService;->mExistingSystemPackages:Landroid/util/ArraySet;
-
-    move-object/from16 v23, v0
-
-    move-object/from16 v0, v20
-
-    iget-object v0, v0, Lcom/android/server/pm/PackageSetting;->name:Ljava/lang/String;
-
-    move-object/from16 v24, v0
-
-    invoke-virtual/range {v23 .. v24}, Landroid/util/ArraySet;->contains(Ljava/lang/Object;)Z
-
-    move-result v23
-
-    .line 9094
-    if-eqz v23, :cond_e
-
-    .line 9100
     const/4 v11, 0x5
 
     goto/16 :goto_3
@@ -22450,7 +22420,9 @@
     .line 9281
     .end local v3    # "npi":Landroid/content/pm/PackageParser$NewPermissionInfo;
     :cond_0
-    return v1
+    const/4 v4, 0x1
+
+    return v4
 
     .line 9270
     .restart local v3    # "npi":Landroid/content/pm/PackageParser$NewPermissionInfo;
