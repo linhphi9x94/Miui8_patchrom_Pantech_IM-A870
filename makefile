@@ -23,7 +23,7 @@ local-miui-modified-apps := TeleService
 
 # Config density for co-developers to use the aaps with HDPI or XHDPI resource,
 # Default configrations are HDPI for ics branch and XHDPI for jellybean branch
-local-density := XXHDPI
+local-density := XHDPI
 
 # All apps need to be removed from original ZIP file
 #local-remove-apps   := 
